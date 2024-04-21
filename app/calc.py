@@ -1,3 +1,1 @@
-"""
-calculator functions
-"""
+"""calculator functions"""
