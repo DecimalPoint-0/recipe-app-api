@@ -1,6 +1,6 @@
 """ Sample test """
 from django.test import SimpleTestCase
-from . import calc
+import calc
 
 
 class CalcTest(SimpleTestCase):
