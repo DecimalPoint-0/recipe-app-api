@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render #noqa
 
 from user.serializers import (
     UserSerializer,
@@ -8,6 +8,7 @@ from user.serializers import (
 from rest_framework import generics, authentication, permissions
 from rest_framework.authtoken.views import ObtainAuthToken
 from rest_framework.settings import api_settings
+
 
 class CreateUserView(generics.CreateAPIView):
     """Creates a new user in the system"""
@@ -30,6 +31,3 @@ class UpdateUserApi(generics.RetrieveUpdateAPIView):
     def get_object(self):
         """retrieve and return the authenticated user"""
         return self.request.user
-
-
-
